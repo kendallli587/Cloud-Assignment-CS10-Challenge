@@ -6,10 +6,7 @@ cnv.height = 600;
 
 // Variables for HTML Elements
 let cloudImgEl = document.getElementById("cloud-img");
-let frameSelectEl = document.getElementById("frameSelector");
 let resetBtnEl = document.getElementById("resetBtn");
-let submitBtnEl = document.getElementById("submitBtn")
-
 
 // Basic Variables for animation
 let cloudOneValue = 100;
@@ -127,7 +124,6 @@ function loop() {
 loop();
 
 resetBtnEl.addEventListener("click", reset);
-submitBtnEl.addEventListener("click", chooseFrame)
 
 function reset() {
     frameCount = 0;
@@ -142,10 +138,4 @@ function reset() {
     rGrassValue = 100;
     gGrassValue = 240;
     bGrassValue = 65;
-}
-
-function chooseFrame() {
-    let chosenFrame = frameSelectEl.value;
-
-    frameCount = chosenFrame;
 }
